@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Styles Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Design Styles</h1>
+    </header>
+    
+    <section class="styles">
+        <div class="style-card">
+            <img src="style1.jpg" alt="Style 1">
+            <h2><a href="https://www.google.com/search?q=style+1" target="_blank">OPIUM</a></h2>
+        </div>
+        <div class="style-card">
+            <img src="style2.jpg" alt="Style 2">
+            <h2><a href="https://www.google.com/search?q=style+2" target="_blank">Y2K</a></h2>
+        </div>
+        <div class="style-card">
+            <img src="style3.jpg" alt="Style 3">
+            <h2><a href="https://www.google.com/search?q=style+3" target="_blank">OLD MONEY</a></h2>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <h2>Your Favorite Style</h2>
+        <form id="feedback-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="style">Choose your favorite style:</label>
+            <select id="style" name="style">
+                <option value="style1">Style 1</option>
+                <option value="style2">Style 2</option>
+                <option value="style3">Style 3</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="response"></p>
+    </section>
+
+    <footer>
+        <h3>Which Style is the Best?</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
