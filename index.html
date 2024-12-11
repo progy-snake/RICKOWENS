@@ -3,49 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Styles Landing Page</title>
+    <title>Favorite Style</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Modern Design Styles</h1>
+        <h1>Choose Your Favorite Style</h1>
     </header>
-    
+
     <section class="styles">
+        <h2>Select Your Favorite Style:</h2>
         <div class="style-card">
             <img src="style1.jpg" alt="Style 1">
-            <h2><a href="https://www.google.com/search?q=style+1" target="_blank">OPIUM</a></h2>
+            <h2><button class="vote-button" data-style="Modern">MODERN STYLE</button></h2>
+            <p class="style-votes" id="modern-votes">Votes: 0</p>
         </div>
         <div class="style-card">
             <img src="style2.jpg" alt="Style 2">
-            <h2><a href="https://www.google.com/search?q=style+2" target="_blank">Y2K</a></h2>
+            <h2><button class="vote-button" data-style="Minimalistic">MINIMALISTIC STYLE</button></h2>
+            <p class="style-votes" id="minimalistic-votes">Votes: 0</p>
         </div>
         <div class="style-card">
             <img src="style3.jpg" alt="Style 3">
-            <h2><a href="https://www.google.com/search?q=style+3" target="_blank">OLD MONEY</a></h2>
+            <h2><button class="vote-button" data-style="Vintage">VINTAGE STYLE</button></h2>
+            <p class="style-votes" id="vintage-votes">Votes: 0</p>
         </div>
-    </section>
-
-    <section class="feedback">
-        <h2>Your Favorite Style</h2>
-        <form id="feedback-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="style">Choose your favorite style:</label>
-            <select id="style" name="style">
-                <option value="style1">Style 1</option>
-                <option value="style2">Style 2</option>
-                <option value="style3">Style 3</option>
-            </select>
-            
-            <button type="submit">Submit</button>
-        </form>
-        <p id="response"></p>
     </section>
 
     <footer>
         <h3>Which Style is the Best?</h3>
+        <form id="favorite-style-form">
+            <label for="nickname">Enter Your Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required placeholder="Enter your nickname">
+
+            <label for="favorite-style">Why do you like this style?</label>
+            <input type="text" id="favorite-style-description" name="favorite-style-description" required placeholder="Describe your favorite style">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="saved-response"></p>
     </footer>
 
     <script src="script.js"></script>
